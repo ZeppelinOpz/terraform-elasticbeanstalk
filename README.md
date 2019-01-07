@@ -73,14 +73,14 @@ module "jenkins" {
 
   datapipeline_config = {
     instance_type = "t2.medium"
-    email         = "rtinoco@cisco.com"
+    email         = "rtinoco@zeppelinops.com"
     period        = "12 hours"
     timeout       = "60 Minutes"
   }
 
   env_vars = {
-    JENKINS_USER          = "admin"
-    JENKINS_PASS          = "start12!"
+    JENKINS_USER          = "dummy"
+    JENKINS_PASS          = "DummyPassword123!"
     JENKINS_NUM_EXECUTORS = 4
   }
 
